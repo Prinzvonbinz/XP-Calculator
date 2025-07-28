@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -13,41 +13,65 @@ h1, h2 {
 
 #bar {
   width: 80%;
-  height: 20px;
-  background: #333;
+  height: 24px;
+  background: #444;
   margin: 10px auto;
-  border-radius: 10px;
+  border: 2px solid #888;
+  image-rendering: pixelated;
+  background-image: url('https://i.imgur.com/Y1r1lxK.png'); /* pixel XP bar style */
+  background-size: cover;
+  border-radius: 4px;
   overflow: hidden;
 }
 
 #bar-fill {
   height: 100%;
   width: 0%;
-  background: limegreen;
+  background: url('https://i.imgur.com/0H8v3Cd.png');
+  background-size: cover;
+  image-rendering: pixelated;
   transition: width 0.3s;
 }
 
-#controls button,
-#xp-entry button {
+#controls .btn,
+#xp-entry .btn {
   margin: 5px;
   padding: 10px 15px;
   font-size: 16px;
+  background: #222;
+  border: 2px solid #5fa63b;
+  color: #9eff6d;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #333;
+  transform: scale(1.05);
 }
 
 #xp-entry input {
   padding: 8px;
   font-size: 16px;
-  width: 100px;
+  width: 120px;
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #5fa63b;
+  border-radius: 4px;
 }
 
 .level-10 {
-  background: #330000;
+  background: url('https://i.imgur.com/AXzO1bY.png'); /* Nether style */
+  background-size: cover;
 }
 
 .level-30 {
-  background: #1e0044;
+  background: url('https://i.imgur.com/UZa6YhL.png'); /* End style */
+  background-size: cover;
 }
 
 .level-50 {
-  background: #003333;
+  background: url('https://i.imgur.com/wlYqKZI.png'); /* Diamond style */
+  background-size: cover;
 }
