@@ -36,7 +36,7 @@ function addXP(amount) {
   }
 
   totalXP += Math.max(0, amount);
-  log.push(`+${amount} XP → Level ${level}`);
+  log.push(`${amount > 0 ? '+' : ''}${amount} XP → Level ${level}`);
   renderLog();
   updateDisplay();
 }
