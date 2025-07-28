@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  transition: background 1s;
+}
+
+h1, h2 {
+  margin-top: 20px;
+}
+
+#bar {
+  width: 80%;
+  height: 20px;
+  background: #333;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#bar-fill {
+  height: 100%;
+  width: 0%;
+  background: limegreen;
+  transition: width 0.3s;
+}
+
+#controls button,
+#xp-entry button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+#xp-entry input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.level-10 {
+  background: #330000;
+}
+
+.level-30 {
+  background: #1e0044;
+}
+
+.level-50 {
+  background: #003333;
+}
