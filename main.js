@@ -16,6 +16,7 @@ function updateDisplay() {
   document.getElementById('progress-text').innerText = `${xp} / ${need} XP`;
   document.getElementById('level-display').innerText = `Level: ${level}`;
   document.getElementById('total-xp').innerText = `Gesamt-XP: ${totalXP}`;
+  document.getElementById('xp-command').innerText = `/xp ${Math.floor(totalXP)}L @p`;
   updateBackground();
   saveState();
 }
@@ -35,7 +36,7 @@ function addXP(amount) {
   }
 
   totalXP += Math.max(0, amount);
-  log.push(`+${amount} XP auf Level ${level}`);
+  log.push(`+${amount} XP → Level ${level}`);
   renderLog();
   updateDisplay();
 }
@@ -51,6 +52,14 @@ function addCustomXP() {
   const value = parseInt(document.getElementById('xp-input').value);
   if (!isNaN(value)) {
     addXP(value);
+    document.getElementById('xp-input').value = '';
+  }
+}
+
+function removeCustomXP() {
+  const value = parseInt(document.getElementById('xp-input').value);
+  if (!isNaN(value)) {
+    addXP(-value);
     document.getElementById('xp-input').value = '';
   }
 }
