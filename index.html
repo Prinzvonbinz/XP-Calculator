@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft XP-Rechner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Minecraft XP-Rechner</h1>
+    
+    <div id="xp-display">
+      <div id="level-display">Level: 0</div>
+      <div id="bar">
+        <div id="bar-fill"></div>
+      </div>
+      <div id="progress-text">0 / 7 XP</div>
+    </div>
+
+    <div id="controls">
+      <button onclick="addXP(1)">+1 XP</button>
+      <button onclick="addXP(-1)">-1 XP</button>
+      <button onclick="addLevel(1)">+1 Level</button>
+      <button onclick="addLevel(-1)">-1 Level</button>
+    </div>
+
+    <div id="xp-entry">
+      <input type="number" id="xp-input" placeholder=\"XP eingeben\">
+      <button onclick="addCustomXP()">XP Hinzufügen</button>
+    </div>
+
+    <h2>Statistik</h2>
+    <p id="total-xp">Gesamt-XP: 0</p>
+    <ul id="xp-log"></ul>
+
+    <h2>XP-Wiki</h2>
+    <ul id="wiki">
+      <li>Creeper töten → 5 XP</li>
+      <li>Erz abbauen (Diamant) → 7 XP</li>
+      <li>Tiere braten → 1 XP</li>
+      <li>Fischen → 1–6 XP</li>
+      <li>Handeln mit Dorfbewohnern → 3–6 XP</li>
+    </ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
