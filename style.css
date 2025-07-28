@@ -18,7 +18,7 @@ h1, h2 {
   margin: 10px auto;
   border: 2px solid #888;
   image-rendering: pixelated;
-  background-image: url('https://i.imgur.com/Y1r1lxK.png'); /* pixel XP bar style */
+  background-image: url('https://i.imgur.com/Y1r1lxK.png');
   background-size: cover;
   border-radius: 4px;
   overflow: hidden;
@@ -62,16 +62,16 @@ h1, h2 {
 }
 
 .level-10 {
-  background: url('https://i.imgur.com/AXzO1bY.png'); /* Nether style */
+  background: url('https://i.imgur.com/AXzO1bY.png') no-repeat center center fixed;
   background-size: cover;
 }
 
 .level-30 {
-  background: url('https://i.imgur.com/UZa6YhL.png'); /* End style */
+  background: url('https://i.imgur.com/UZa6YhL.png') no-repeat center center fixed;
   background-size: cover;
 }
 
 .level-50 {
-  background: url('https://i.imgur.com/wlYqKZI.png'); /* Diamond style */
+  background: url('https://i.imgur.com/wlYqKZI.png') no-repeat center center fixed;
   background-size: cover;
 }
